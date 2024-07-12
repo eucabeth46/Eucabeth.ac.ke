@@ -1,0 +1,29 @@
+*{
+    background-color: #eff4fd;
+    font-family: sans-serif; 
+}
+
+.image-container{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.image {
+    display: block;
+    width: 25%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container:active {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.image-container:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
